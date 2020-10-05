@@ -535,8 +535,8 @@ AsciiStrnCatS (
   return RETURN_SUCCESS;
 }
 
-CHAR8 *
-AsciiStrCat(CHAR8 *Destination, const CHAR8 *Source)
+char *
+AsciiStrCat(char *Destination, const char *Source)
 {
 	UINTN dest_len = strlena((CHAR8 *)Destination);
 	UINTN i;
@@ -560,8 +560,8 @@ AsciiStrCpy(CHAR8 *Destination, const CHAR8 *Source)
 	return Destination;
 }
 
-CHAR8 *
-AsciiStrnCpy(CHAR8 *Destination, const CHAR8 *Source, UINTN count)
+char *
+AsciiStrnCpy(char *Destination, const char *Source, UINTN count)
 {
 	UINTN i;
 
@@ -588,7 +588,7 @@ ScanMem8(const CHAR8 *str, UINTN count, CHAR8 ch)
 
 	for (i = 0; i < count; i++) {
 		if (str[i] == ch)
-			return (CHAR8 *)str + i;
+			return (char *)str + i;
 	}
 	return NULL;
 }
@@ -640,7 +640,7 @@ strcasecmp (const char *str1, const char *str2)
 /* Based on AsciiStrDecimalToUintnS() in edk2
  * MdePkg/Library/BaseLib/SafeString.c */
 UINTN
-AsciiStrDecimalToUintn(const CHAR8 *String)
+AsciiStrDecimalToUintn(const char *String)
 {
 	UINTN     Result;
 

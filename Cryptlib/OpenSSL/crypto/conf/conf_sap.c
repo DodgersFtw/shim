@@ -40,8 +40,6 @@ void OPENSSL_config(const char *appname)
 }
 #endif
 
-#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
-
 int openssl_config_int(const OPENSSL_INIT_SETTINGS *settings)
 {
     int ret = 1;

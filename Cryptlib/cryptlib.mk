@@ -17,6 +17,6 @@ CRYPTLIB_SOURCES = \
 	Cryptlib/SysCall/BaseMemAllocation.c \
 	Cryptlib/SysCall/BaseStrings.c \
 	Cryptlib/SysCall/CrtWrapper.c \
-	Cryptlib/SysCall/memset.c \
 	Cryptlib/SysCall/TimerWrapper.c \
+	Cryptlib/SysCall/memset.c \
 	Cryptlib/Library/TimerLib.c Cryptlib/Library/Console.c
